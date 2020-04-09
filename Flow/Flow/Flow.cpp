@@ -8,6 +8,11 @@ int main() {
 	int i, j;
 	bool keepGoing = true;
 
+	//using a for loop declaration, condition, increment
+	for (int loop = 0; loop < 10; loop++) {
+		cout << loop << " ";
+	}
+
 	//use while loop to control when to stop comparing numbers
 	while (keepGoing) {
 
