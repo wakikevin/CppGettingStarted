@@ -19,6 +19,11 @@ bool test(double x) {
 	return x > 0; //or return x > 0
 }
 
+//void returns nothing
+void test(void) {
+	return;
+}
+
 //the main function
 int main() {
 
