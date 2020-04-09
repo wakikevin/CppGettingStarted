@@ -6,9 +6,17 @@ int add(int x, int y) {
 	return x + y; //return the sum
 }
 
-//overloading
+//overloading parameters
 int add(int x, int y, int z) {
 	return add(x,y)+z; //return the sum
+}
+
+//overloading parameter type -- this is risky
+bool test(bool x) {
+	return x;
+}
+bool test(double x) {
+	return x > 0; //or return x > 0
 }
 
 //the main function
@@ -20,5 +28,9 @@ int main() {
 
 	int b = add(3, 7,2);
 	cout << "3+7+2 is: " << b << endl;
+
+	cout << "Test for true is " << test(true) << endl;
+	cout << "Test for 4.5 is " << test(4.5) << endl;
+
 	return 0;
 }
