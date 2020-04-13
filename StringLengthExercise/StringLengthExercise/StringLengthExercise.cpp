@@ -11,9 +11,11 @@ int main() {
 
 	//ask for the user input
 	cout << "Enterthe first string: ";
-	cin >> strOne;
+	//cin >> strOne;
+	getline(cin, strOne);
 	cout << "Enter the second string: ";
-	cin >> strTwo;
+	//cin >> strTwo;
+	getline(cin, strTwo);
 
 	//get the length of the strings
 	strOneLen = strOne.length();
