@@ -23,8 +23,11 @@ int main() {
 	if (strOneLen > strTwoLen) {
 		cout << "The first string " << "\"" + strOne + "\"" << " is longer.";
 	}
-	else {
+	if (strOneLen < strTwoLen) {
 		cout << "The second string " << "\"" + strTwo + "\"" << " is longer.";
+	}
+	if (strOneLen == strTwoLen) {
+		cout << "The two strings are of same length.";
 	}
 	return 0;
 }
