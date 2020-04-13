@@ -21,5 +21,21 @@ int main()
     }
     cout << greeting << endl;
 
+    //string manipulation
+    int strLength = greeting.length();
+    cout << "\"" + greeting + "\" is " << strLength << " characters long." << endl;
+
+    //get the first space
+    auto space = greeting.find(" ");
+    string beginnig = greeting.substr(space + 1); //get the substring upto the first space
+    cout << beginnig << endl;
+
+    //check if we have correct substring
+    if (beginnig == name) {
+        cout << "Expected Result." << endl;
+    }
+
+
+
     return 0;
 }
