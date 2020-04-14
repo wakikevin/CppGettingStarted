@@ -13,7 +13,7 @@ int main() {
 
 	//deposit money to it
 	a1.deposit(500);
-	cout << "After deposit of amount 500 " << endl;
+	cout << "After deposit of amount 500 balance is : " << a1.getBalance() << endl;
 	for (auto item : a1.report()) {
 		cout << item << endl;
 	}

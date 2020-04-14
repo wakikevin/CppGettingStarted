@@ -56,3 +56,8 @@ bool Account::withdraw(int amount) {
         return false;
     }
 }
+
+//get balance 
+//int Account::getBalance() {
+//    return balance;
+//}

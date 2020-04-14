@@ -17,4 +17,5 @@ public:
 	std::vector<std::string> report();
 	bool deposit(int amount);
 	bool withdraw(int amount);
+	int getBalance() { return balance; } //inline function for shorter functions
 };
