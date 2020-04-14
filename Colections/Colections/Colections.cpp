@@ -36,5 +36,43 @@ int main() {
 		cout << item << " ";
 	}
 	cout << endl;
+
+	//get the size of the vector
+	cout << "int vector vi has " << vi.size() << " elements. " << endl;
+
+	//change element values in a vector
+	vi[5] = 3;
+	vi[6] = -1;
+	//loop to display vector items
+	for (auto item : vi) {
+		cout << item << " ";
+	}
+	cout << endl;
+
+	///display using indexes
+	for (unsigned int i = 0; i < vi.size(); i++) {
+		cout << vi[i] << " ";
+	}
+	cout << endl;
+
+	///display using begin and end iterators
+	for (auto i = begin(vi); i != end(vi); i++) {
+		cout << *i << " ";
+	}
+	cout << endl;
+
+	//sorting a vector
+	sort(begin(vs), end(vs));
+	//display the words
+	for (auto item : vs) {
+		cout << item << " ";
+	}
+	cout << endl;
+
+	//count
+	int threes = count(begin(vi), end(vi), 3);
+	cout << "The vector of ints has " << threes << " elements of value 3" << endl;
+	int tees = count(begin(vs[0]), end(vs[0]), 't');
+	cout << "The first word has " << tees << " letter t(s)" << endl;
 	return 0;
 }
