@@ -1,6 +1,4 @@
 //the account class declaration
-#include <vector> //include the vector library
-#include <string> //include the string library
 #include "Account.h" //include the Account definition
 
 using namespace std; //use the standard namespace

@@ -1,6 +1,4 @@
 //the account class declaration
-#include <vector> //include the vector library
-#include <string> //include the string library
 #include "Transaction.h" //include the transaction definition
 
 using namespace std; //use the standard namespace
